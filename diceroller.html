@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Dice Roller</title>
+<link href="diceroller.css" type="text/css" rel="stylesheet">
+</head>
+<body>
+<h1>Dice Roller!</h1>
+<div id="container">
+  <div id="total">
+
+  </div>
+  <div id="backspace">
+    <button onclick=backspaceTotal()><==</button>
+  </div>
+  <div id="diceDiv">
+    <div id="d2" class="dice" onclick=useDice(id)>
+      d2
+    </div>
+    <div id="d3" class="dice" onclick=useDice(id)>
+      d3
+    </div>
+    <div id="d4" class="dice" onclick=useDice(id)>
+      d4
+    </div>
+    <div id="d6" class="dice" onclick=useDice(id)>
+      d6
+    </div>
+    <div id="d8" class="dice" onclick=useDice(id)>
+      d8
+    </div>
+
+    <div id="d10" class="dice" onclick=useDice(id)>
+      d10
+    </div>
+    <div id="d12" class="dice" onclick=useDice(id)>
+      d12
+    </div>
+    <div id="d20" class="dice" onclick=useDice(id)>
+      d20
+    </div>
+    <div id="d100" class="dice" onclick=useDice(id)>
+      d100
+    </div>
+  </div>
+  <p />
+  <div id="mod">
+    + <input type="text" id="modText">
+    <button type="button" id="modButton" onclick=useMod()>Add modifier</button>
+  </div>
+  <div id="custom">
+    d <input type="text" id="customDice">
+    <button type="button" id="customButton" onclick=useDice(id)>Add custom dice</button>
+  </div>
+  <div id="amount">
+
+  </div>
+  <div id="roll">
+    <button onclick=rollAllDice()>Roll</button>
+  </div>
+  <div id="result">
+
+  </div>
+  <div id="breakdown">
+
+  </div>
+</div>
+
+<script src="diceroller.js"></script>
+</body>
+</html>
